@@ -1,0 +1,42 @@
+body{
+	color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+.layout{
+	height: 100vh;
+	display: flex;
+	box-sizing: border-box;
+	.site-layout{
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		.site-layout-content{
+			flex: 1;
+			.site-layout-background{
+				height: 100%;
+				padding: 18px 10px;
+				background: #fff;
+				th, td{
+					text-align: center;
+					padding: 8px;
+				}
+				a{
+					color: #5ca098;
+				}
+				input{
+					&:hover, &:focus{
+						border-color: #69b3aa;
+					}
+				}
+				.ant-btn{
+					background-color: #5ca098;
+					border-color: #5ca098;
+				}
+				.ant-pagination {
+				  margin: 16px 0 5px 0;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.center-input{
+	width: 80%;
+	position: relative;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+  .product-input{
+    width: 43%;
+  }
+  .ant-select{
+    width: 14%;
+  }
+  .avatar-uploader > .ant-upload {
+    width: 128px;
+    height: 128px;
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .submit-btn{
+    width: 100px;
+    position: relative;
+    left: 50%;
+    margin: 25px 0 0 -50px;
+  }
+}

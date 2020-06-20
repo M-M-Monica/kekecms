@@ -1,0 +1,24 @@
+.site-layout-header{
+	flex: 0 0 6%;
+	background-color: #fff;
+	border-bottom-left-radius: 30px;
+	border-bottom: 2px solid #1d737b;
+	box-shadow: #278e83 0px 0px 4px 0px;
+	padding: 0px;
+	font-size: 15px;
+	position: relative;
+	font-weight: 600;
+	.ant-dropdown-link{
+		position: absolute;
+	  right: 3%;
+	  top: 50%;
+	  transform: translateY(-50%);
+		color: #66b3aa;
+	  .anticon{
+	  	margin: 0 10px;
+	  }
+	}
+	.ant-dropdown-open{
+		text-align: center;
+	}
+}
