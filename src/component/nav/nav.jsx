@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { HomeOutlined, UserOutlined, UnorderedListOutlined, SnippetsOutlined } from '@ant-design/icons';
 import './nav.scss';
-import logo from '../../static/ke.png'
+import logo from '../../static/ke.png';
 
 export default class Nav extends Component{
   constructor(props){

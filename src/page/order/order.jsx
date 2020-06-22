@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Table, Input, Space, Tag } from 'antd';
 const { Search } = Input;
-import MyService from '../../service/request.jsx'
-import OrderService from '../../service/order-service.jsx'
+import MyService from '../../service/request.jsx';
+import OrderService from '../../service/order-service.jsx';
 const ms = new MyService();
 const os = new OrderService();
 import './order.scss';

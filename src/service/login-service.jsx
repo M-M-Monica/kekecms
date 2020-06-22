@@ -1,4 +1,4 @@
-import MyService from './request.jsx'
+import MyService from './request.jsx';
 const ms = new MyService();
 
 export default class LoginService {

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import { Menu, Dropdown } from 'antd';
 import { SmileFilled, DownOutlined } from '@ant-design/icons';
-import MyService from '../../service/request.jsx'
-import LoginService from '../../service/login-service.jsx'
+import MyService from '../../service/request.jsx';
+import LoginService from '../../service/login-service.jsx';
 const ms = new MyService();
 const ls = new LoginService();
 import './header.scss';
@@ -46,6 +46,6 @@ export default class Header extends Component{
         :<Link to="/login" className="ant-dropdown-link">Login</Link>
       }
       </header>
-    )
+    );
   }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Table } from 'antd';
-import MyService from '../../service/request.jsx'
-import UserService from '../../service/user-service.jsx'
+import MyService from '../../service/request.jsx';
+import UserService from '../../service/user-service.jsx';
 const ms = new MyService();
 const us = new UserService();
 

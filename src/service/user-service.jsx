@@ -1,4 +1,4 @@
-import MService from './request.jsx'
+import MService from './request.jsx';
 const ms = new MService();
 
 export default class UserService {

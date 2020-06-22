@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Layout from './component/layout/layout.jsx';
 import Login from './page/login/login.jsx';
@@ -34,7 +34,7 @@ class App extends Component {
           <Route path="/" render={props => LayoutRouter}/>
         </Switch>
       </Router>
-    )
+    );
   }
 }
 

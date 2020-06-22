@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import { Statistic, Card, Row, Col, Typography } from 'antd';
 import { UserOutlined, UnorderedListOutlined, SnippetsOutlined } from '@ant-design/icons';
 const { Title } = Typography;
-import MyService from '../../service/request.jsx'
-import HomeService from '../../service/home-service.jsx'
+import MyService from '../../service/request.jsx';
+import HomeService from '../../service/home-service.jsx';
 const ms = new MyService();
 const hs = new HomeService();
-import './home.scss'
+import './home.scss';
 
 export default class Home extends Component {
 	constructor(props) {

@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Input, Table, Steps } from 'antd';
 const { Group } = Input;
 const { Step } = Steps;
-import MyService from '../../service/request.jsx'
-import OrderService from '../../service/order-service.jsx'
+import MyService from '../../service/request.jsx';
+import OrderService from '../../service/order-service.jsx';
 const ms = new MyService();
 const os = new OrderService();
 import './detail.scss';

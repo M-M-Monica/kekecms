@@ -4,8 +4,8 @@ import { LoadingOutlined, PlusOutlined } from '@ant-design/icons';
 const { Group, TextArea } = Input;
 const { Step } = Steps;
 const { Option } = Select;
-import MyService from '../../service/request.jsx'
-import ProductService from '../../service/product-service.jsx'
+import MyService from '../../service/request.jsx';
+import ProductService from '../../service/product-service.jsx';
 const ms = new MyService();
 const ps = new ProductService();
 import './edit.scss';

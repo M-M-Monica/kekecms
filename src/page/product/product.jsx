@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Table, Input, Space, Button } from 'antd';
 const { Search } = Input;
-import MyService from '../../service/request.jsx'
-import ProductService from '../../service/product-service.jsx'
+import MyService from '../../service/request.jsx';
+import ProductService from '../../service/product-service.jsx';
 const ms = new MyService();
 const ps = new ProductService();
 import './product.scss';

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import { Form, Input, Button } from 'antd';
 const { Item } = Form;
-import MyService from '../../service/request.jsx'
-import LoginService from '../../service/login-service.jsx'
+import MyService from '../../service/request.jsx';
+import LoginService from '../../service/login-service.jsx';
 const ms = new MyService();
 const ls = new LoginService();
-import './login.scss'
+import './login.scss';
 
 export default class Login extends Component {
 	constructor(props) {
