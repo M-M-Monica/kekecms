@@ -1,9 +1,9 @@
 const path = require('path')
 const webpack =require('webpack')
 const htmlWebpackPlugin = require('html-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -17,9 +17,18 @@ module.exports = {
     rules: [
       {
         test: /\.(sc|c)ss$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '../'
+            }
+          },
+          'css-loader',
+          'sass-loader'
+        ]
       },
-      { test: /\.(png|gif|bmp|jpg)$/, use: 'url-loader?limit=5000&name=images/[name].[ext]' },
+      { test: /\.(png|gif|bmp|jpg)$/, use: 'url-loader?limit=5000&name=img/[name].[ext]' },
       { test: /\.(ttf|eot|svg|woff|woff2)$/, use: 'url-loader?limit=5000&name=resource/[name].[ext]' },
       { test: /\.jsx$/, use: 'babel-loader', exclude: /(node_modules)/ }
     ]
@@ -38,7 +47,7 @@ module.exports = {
     new MiniCssExtractPlugin({ filename: 'css/styles.css' })
   ],
   optimization: {
-    minimizer: [new UglifyJsPlugin(), new OptimizeCSSAssetsPlugin({})],
+    minimizer: [new TerserPlugin(), new OptimizeCSSAssetsPlugin()],
     splitChunks: {
       chunks: 'all',
       cacheGroups: {
